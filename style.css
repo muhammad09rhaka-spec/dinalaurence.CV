@@ -1,0 +1,26 @@
+.animate-on-scroll { opacity: 0; transition: all 0.8s ease-out; }
+.slide-up { transform: translateY(50px); }
+.slide-right { transform: translateX(-50px); }
+.slide-left { transform: translateX(50px); }
+.zoom-in { transform: scale(0.9); }
+.popup { transform: scale(0.8); }
+.animate-on-scroll.visible { opacity: 1; transform: translate(0) scale(1); }
+
+.timeline-item:hover .timeline-dot {
+    background-color: white;
+    box-shadow: 0 0 0 4px #2c3e50;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2c3e50;
+    transition: all 0.3s;
+}
+.nav-link:hover::after { width: 100%; }
+
+.edu-details { transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, margin-top 0.4s ease-in-out; }
